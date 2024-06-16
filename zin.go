@@ -1,15 +1,13 @@
 package zin
 
-import "github.com/devisettymahidhar315/zin/api"
+import (
+	"github.com/devisettymahidhar315/zin/api"
+	"github.com/gin-gonic/gin"
+)
 
-func Zin() {
-
-	// api.InitializeRoutes()
+func Zin() *gin.Engine {
 
 	// Initialize the Gin router and routes
-	Zin := api.InitializeRoutes()
-
-	// Start the server
-	Zin.Run()
+	return api.InitializeRoutes()
 
 }
