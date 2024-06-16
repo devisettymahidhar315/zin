@@ -13,8 +13,8 @@ var cache = multi_cache.NewMultiCache()
 func Zin() *gin.Engine {
 
 	//storing the values in the cache
-	cache.Set("a", "1", length)
-	cache.Set("b", "2", length)
+	
+	//cache.Set("b", "2", length)
 
 	//intiliazes the restapi with gin
 	r := gin.Default()
